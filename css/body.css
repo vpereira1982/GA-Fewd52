@@ -1,0 +1,255 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+	font-size: 20px;
+	color:  white;
+	height: 100%;
+	background-color: black;
+}
+
+div.container {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+/***************
+Parallax & Video backgrounds
+***************/
+
+.addParallax1 {
+ 	background: url("../img/video-static.png"); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: solid 1px white; 
+    height: 100%;
+    display: block;
+} 
+
+.video { 
+ 	background: url('../img/video-static.png') no-repeat;
+  	background-size: cover;
+  	transition: 1s opacity;
+  	border-bottom: solid 1px white;
+}
+
+#parallax2 {
+	background: url("../img/shattered.gif");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    border-bottom: solid 1px white;
+    overflow:  hidden;
+    height: 100%;
+}
+
+#parallax3 {
+	background: url("../img/bird-bg.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+    border-bottom: solid 1px black;
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax3Front {
+    background: url("../img/fore-bird-full.png");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%; 
+    width: 100%;
+}
+
+#parallax4 {
+	background: url("../img/brickwall.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    height: 95%; 
+    border-bottom: solid 1px darkgray;
+    overflow: hidden;
+    color: rgb(102, 102, 102);
+}
+
+/* Arrow Class */
+
+.fa-arrow-circle-down { 
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	font-size: 70px;
+	top: 80%;
+	color: white;
+	width: 100%;
+}
+
+/***************
+Bio Section 
+***************/
+
+h1.headlinetext {
+	top: 0;
+	padding: 90px 0 5px 0;
+	color: #DADBEA;
+}
+
+h1.headlineSpeciality {
+	top: 0;
+	padding: 10px 0 5px 0;
+	margin-bottom: 15px;
+	color: #DADBEA;
+}
+
+.paragraph {
+    letter-spacing: 1px;
+    text-align: justify;
+    text-justify: inter-word; 
+    font-weight: lighter;
+    font-family: Raleway, "Helvetica Neue",Helvetica, Arial, sans-serif;
+}
+
+/*************** 
+Contact Form Section
+***************/
+
+h1 {
+	position: relative;
+	top: 95px;
+	font-family: 'Amatic SC', cursive;
+	color: white;
+	font-size: 55px;
+	text-align: center;
+}
+
+h3 {
+	position: relative;
+	top: 110px;
+	letter-spacing: .5px;
+	font-family: sans-serif;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+}
+
+h1, h3, .blackFont {
+	color: black;
+}
+
+form {
+	position: relative;
+	top: 28%;
+	border: solid 0.5px rgba(200, 184, 184, .5);
+	border-radius: .35rem;
+	padding: 3% 5%;
+	box-shadow: 3px 3px 10px rgba(184, 184, 184, .5);
+	background-color: whitesmoke;
+}
+
+label {
+	font-family: font-family: Raleway, "Helvetica Neue",Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;	
+	margin-bottom: 0;
+	font-size: 16px;
+}
+
+input.form-control {
+	color: lightgray;
+	font-size: 14px;
+	border-radius: .35rem;
+}
+
+textarea.form-control {
+	height: 100px;
+	font-size: 14px;
+}
+
+input.btn-primary {
+	margin-top: 20px;
+}
+
+/***************
+Quotes Section 
+***************/
+
+blockquote.quote {
+	margin-top: 50%;
+	min-width: 100%;
+	transition: 0;
+	color: white;
+	font-family: 'Amatic SC', cursive;
+	letter-spacing: .5px;
+	font-size: 2.1em;
+	transition: all .3s ease .15s;
+}
+
+blockquote.slideOff {
+	display: none;
+}
+
+p.quoteFrom {
+	float: right;
+}
+
+i.fa-chevron-left {
+	float: left;
+	font-size: 60px;
+	margin-top: 120%;
+	color: rgba(255, 255, 255, .5);
+	transition: color 1s ease-out;
+	-moz-transition: color 1s ease-out;
+}
+
+i.fa-chevron-left:hover {
+	color: white;
+}
+
+i.fa-chevron-right {
+	float: right;
+	font-size: 60px;
+	margin-top: 120%;
+	color: rgba(255, 255, 255, .5);
+	transition: color 1s ease-out;
+	-moz-transition: color 1s ease-out;
+}
+
+i.fa-chevron-right:hover {
+	color: white;
+}
+
+/***************
+Footer Section 
+***************/
+
+footer {
+	text-align: center;
+	font-family: Raleway, "Helvetica Neue",Helvetica, Arial, sans-serif;
+	letter-spacing: .2rem;
+	font-size: .8rem;
+	padding: 10px 0 0 0;
+	background-color: #212121;
+	color: white;
+	margin: 0;
+	border-top: solid 1px white;
+	height: 5%;
+}
+
+footer div p {
+	position: relative;
+	top: -2px;
+	padding: 0;
+	margin: 0;
+	font-family: Raleway, "Helvetica Neue",Helvetica, Arial, sans-serif;
+}
+

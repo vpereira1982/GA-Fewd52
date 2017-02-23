@@ -1,0 +1,133 @@
+
+
+@media screen and (min-width: 1061px) and (max-width: 1201px) {
+	ul.nav-list {
+		margin-top: 5.5%;
+	}
+
+	ul.social-list {
+		margin: 10% 0;
+		float: left;
+	}
+
+	ul.social-list li {
+		padding: 0;
+		margin: 0 -15px;
+		float: left;
+	}
+}
+
+@media screen and (min-width: 997px) and (max-width: 1060px) {
+
+	ul.nav-list {
+		margin-top: 5.5%;
+		text-align: left;
+		padding: 0;
+	}
+
+	ul.social-list li {
+		position: relative;
+		left: -15px;
+		margin: 5px -15px;
+	}
+}
+
+
+@media screen and (max-width: 996px) {
+	ul.nav-list {
+		margin-top: 4%;
+		text-align: left;
+		padding: 0;
+	}
+
+	ul.social-list {
+		margin-left: 1%;
+		padding: 0 3%;
+		float: left;
+	}
+
+	.myNameDesc, .myName {
+		display: none;
+	}
+
+}
+
+@media screen and (min-width: 488px) and (max-width: 770px) {
+	ul.social-list {
+		display: none;
+	}
+
+	ul.nav-list {
+		margin-top: 3%;
+		text-align: center;
+		padding: 0; /* new */
+	}
+
+	ul li a {
+		padding: 0 15px;
+	}
+}
+@media screen and (max-width: 499px) {
+	ul li a {
+		padding: 0 13px;
+	}
+}
+
+@media screen and (max-width: 487px) {
+	ul.social-list {
+		display: none;
+	}
+
+	ul li:not(:last-child) {
+		display: none;
+	}
+
+	ul li.mobileIcon {
+		position: relative;
+		top: -8px;
+		padding: 0;
+		display: inline-block;
+		float: right;
+		border: solid 2px white;
+		border-radius: 3px;
+	}
+
+	ul li.mobileIcon a {
+		padding-left: 11px;
+		padding-right: 9px;
+	}
+
+	.headlinetext {
+		top: 130px;
+	}
+
+/* 	NavBar Icon Responsive Toogle Class*/	
+	
+	  ul.responsive {
+	  	position: relative;
+	  	margin: 0;
+	  }
+	  
+	  ul.responsive li.mobileIcon {
+		position: absolute;
+		top: 8px;
+		right: 16px;
+		margin: -5px 0;
+	  }
+	  
+	  ul.responsive li {
+	    float: none;
+	    display: inline;
+	  }
+	  
+	  ul.responsive li a {
+	    text-align: left;
+	    text-decoration: none;
+	    display: block;
+	    margin: 5px 0;
+	  }
+
+	  a:visited {
+	  	color: white;
+	  }
+}
