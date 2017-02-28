@@ -107,6 +107,7 @@ h1.headlinetext {
 h1.headlineSpeciality {
 	top: 0;
 	padding: 10px 0 5px 0;
+	margin-left: 10px;
 	margin-bottom: 15px;
 	color: #DADBEA;
 }
@@ -117,6 +118,92 @@ h1.headlineSpeciality {
     text-justify: inter-word; 
     font-weight: lighter;
     font-family: Raleway, "Helvetica Neue",Helvetica, Arial, sans-serif;
+}
+
+.skill_images {
+	height: 4%;
+}
+
+/***************
+Quotes Section 
+***************/
+
+blockquote {
+	margin-top: 50%;
+	min-width: 100%;
+	transition: 0;
+	color: white;
+	font-family: 'Amatic SC', cursive;
+	letter-spacing: .5px;
+	font-size: 2.1em;
+}
+
+blockquote.quote {
+	transition: all .3s ease .15s;
+	animation: slideDown .7s;
+}
+
+blockquote.slideOff {
+	display: none;
+}
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+	50%{
+		transform: translateY(8%);
+	}
+	65%{
+		transform: translateY(-4%);
+	}
+	80%{
+		transform: translateY(4%);
+	}
+	95%{
+		transform: translateY(-2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}		
+}
+
+p.quoteFrom {
+	float: right;
+}
+
+a.quoteFromLink {
+	float: right;
+	clear: both;
+	font-size: .5em;
+	text-decoration: none;
+	margin-top: -5px;
+}
+
+i.fa-chevron-left {
+	float: left;
+	font-size: 60px;
+	margin-top: 120%;
+	color: rgba(255, 255, 255, .5);
+	transition: color 1s ease-out;
+	-moz-transition: color 1s ease-out;
+}
+
+i.fa-chevron-left:hover {
+	color: white;
+}
+
+i.fa-chevron-right {
+	float: right;
+	font-size: 60px;
+	margin-top: 120%;
+	color: rgba(255, 255, 255, .5);
+	transition: color 1s ease-out;
+	-moz-transition: color 1s ease-out;
+}
+
+i.fa-chevron-right:hover {
+	color: white;
 }
 
 /*************** 
@@ -177,55 +264,6 @@ textarea.form-control {
 
 input.btn-primary {
 	margin-top: 20px;
-}
-
-/***************
-Quotes Section 
-***************/
-
-blockquote.quote {
-	margin-top: 50%;
-	min-width: 100%;
-	transition: 0;
-	color: white;
-	font-family: 'Amatic SC', cursive;
-	letter-spacing: .5px;
-	font-size: 2.1em;
-	transition: all .3s ease .15s;
-}
-
-blockquote.slideOff {
-	display: none;
-}
-
-p.quoteFrom {
-	float: right;
-}
-
-i.fa-chevron-left {
-	float: left;
-	font-size: 60px;
-	margin-top: 120%;
-	color: rgba(255, 255, 255, .5);
-	transition: color 1s ease-out;
-	-moz-transition: color 1s ease-out;
-}
-
-i.fa-chevron-left:hover {
-	color: white;
-}
-
-i.fa-chevron-right {
-	float: right;
-	font-size: 60px;
-	margin-top: 120%;
-	color: rgba(255, 255, 255, .5);
-	transition: color 1s ease-out;
-	-moz-transition: color 1s ease-out;
-}
-
-i.fa-chevron-right:hover {
-	color: white;
 }
 
 /***************

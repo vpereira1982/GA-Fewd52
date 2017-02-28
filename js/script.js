@@ -95,13 +95,13 @@ function toogleVideo() {
 Sliding Quotes
 *******************/
 
+var quote = document.getElementsByClassName('quote');
 var leftArrow = document.getElementsByClassName('fa-chevron-left')[0];
 var rightArrow = document.getElementsByClassName('fa-chevron-right')[0];
 leftArrow.addEventListener('click', backQuote);
 rightArrow.addEventListener('click', forwardQuote);
 
 function forwardQuote() {
-	var quote = document.getElementsByClassName('quote');
 	for (var i = 0; i < quote.length; i++) {
 		if (quote[i].className === 'quote' && i !== quote.length - 1) {
 				quote[i].className += ' slideOff';
@@ -112,8 +112,7 @@ function forwardQuote() {
 }
 
 function backQuote() {
-	var quote = document.getElementsByClassName('quote');
-	for (var i = 2; i >= 0; i--) {
+	for (var i = 3; i >= 0; i--) {
 		if (quote[i].className === 'quote' && i !== 0) {
 				quote[i].className += ' slideOff';
 				quote[i - 1].className = 'quote';

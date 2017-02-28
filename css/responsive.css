@@ -40,6 +40,10 @@
 		padding: 0;
 	}
 
+	ul.nav-list li a {
+		padding: 0 14px;
+	}
+
 	ul.social-list {
 		margin-left: 1%;
 		padding: 0 3%;
@@ -50,9 +54,34 @@
 		display: none;
 	}
 
+	h1.headlinetext {
+		font-size: 36px;
+		margin-left: 12px;
+	}
+
+	h1.headlineSpeciality {
+		font-size: 36px;
+		margin-left: 12px;
+	}
+
+	.paragraph {
+		font-size: 16px;
+	}
+
+	h3.blackFont {
+		display: none;
+	}
+
+	#parallax2 { /* Need to make the overflow stop or disappear */
+		height: 100%;
+	}
+
+	.img-thumbnail {
+    	min-width: 90%;
+	}
 }
 
-@media screen and (min-width: 488px) and (max-width: 770px) {
+@media screen and (min-width: 488px) and (max-width: 767px) {
 	ul.social-list {
 		display: none;
 	}
@@ -66,10 +95,119 @@
 	ul li a {
 		padding: 0 15px;
 	}
+
+	.img-thumbnail {
+		margin: 0 auto;
+    	width: 70%;
+    	min-width: 50%;
+    	display: block;
+	}
+
+	#parallax2 { 
+		height: 120%;
+		overflow: auto;
+	}
+
+	section blockquote.quote {
+		margin-top: 65%;
+		position: relative;
+		font-size: 30px;
+	}
+
+	i.quoteswipe {
+		font-size: 40px;
+		position: relative;
+		top: 55%;
+	}
+
+	h1 {
+	font-size: 45px;
+	}
+
+	label {
+		font-size: 14px;
+	}
+
+	input.form-control {
+		font-size: 12px;
+	}
+
+	textarea.form-control {
+		font-size: 12px;
+	}
+
+	img.img-rounded.skill_images:first-of-type {
+		display: inline;
+		width: 50%;
+		height: 100%;
+		position: relative;
+		margin-left: 37px;
+	}
 }
-@media screen and (max-width: 499px) {
+
+@media screen and (min-width: 488px) and (max-width: 575px) {
+	section blockquote.quote {
+		margin-top: -280px;
+		position: absolute;
+		font-size: 30px;
+		min-width: 30%;
+	}
+
+	img.img-rounded.skill_images:first-of-type {
+		display: none;
+	}
+
+	img.img-rounded.skill_images {
+		display: none;
+	}
+
+	h1.headlineSpeciality {
+		display: none;
+	}
+
+	.paragraph {
+		padding-top: 5%;
+		width: 80%;
+		max-width: 80%;
+		margin: 0 auto;
+	}
+
+	#parallax2 { 
+		height: 110%;
+		overflow: auto;
+	}
+
+	i.fa-chevron-left {
+		font-size: 30px;
+		position: relative;
+		top: -280px;
+		float: left;
+	}
+
+	i.fa-chevron-right {
+		font-size: 30px;
+		position: relative;
+		top: -620px;
+		clear: both;
+		float: right;
+	}
+	
 	ul li a {
 		padding: 0 13px;
+	}
+
+	a.quoteFromLink {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 498px) {
+	ul li a {
+		padding: 0 13px;
+	}
+	a.quoteFromLink {
+		display: none;
 	}
 }
 
@@ -97,8 +235,76 @@
 		padding-right: 9px;
 	}
 
+	#parallax2 { 
+		height: 110%;
+		overflow: auto;
+	}
+
 	.headlinetext {
 		top: 130px;
+	}
+
+	.img-thumbnail {
+		margin: 0 auto;
+    	min-width: 50%;
+    	display: block;
+	}
+
+	img.img-rounded.skill_images:first-of-type {
+		display: none;
+	}
+
+	img.img-rounded.skill_images {
+		display: none;
+	}
+
+	h1.headlineSpeciality {
+		display: none;
+	}
+
+	.paragraph {
+		padding-top: 5%;
+		width: 80%;
+		max-width: 80%;
+		margin: 0 auto;
+	}
+
+	section blockquote.quote {
+		margin-top: -140px;
+		position: relative;
+		font-size: 30px;
+		max-width: 20%;
+	}
+
+	i.fa-chevron-left {
+		font-size: 30px;
+		position: relative;
+		top: -160px;
+		float: left;
+	}
+
+	i.fa-chevron-right {
+		font-size: 30px;
+		position: relative;
+		top: -400px;
+		clear: both;
+		float: right;
+	}
+
+	h1 {
+		font-size: 35px;
+	}
+
+	label {
+		font-size: 12px;
+	}
+
+	footer {
+		font-size: .5em;
+	}
+
+	input.btn.btn-primary {
+		font-size: 12px;
 	}
 
 /* 	NavBar Icon Responsive Toogle Class*/	
