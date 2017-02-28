@@ -104,19 +104,27 @@ rightArrow.addEventListener('click', forwardQuote);
 function forwardQuote() {
 	for (var i = 0; i < quote.length; i++) {
 		if (quote[i].className === 'quote' && i !== quote.length - 1) {
-				quote[i].className += ' slideOff';
-				quote[i + 1].className = 'quote';
-				break;
-		} 
+			quote[i].className += ' slideOff';
+			quote[i + 1].className = 'quote';
+			break;
+		} else if (quote[i].className === 'quote' && i === quote.length - 1) {
+			quote[i].className += ' slideOff';
+			quote[0].className = 'quote';
+			break;
+		}
 	}
 }
 
 function backQuote() {
 	for (var i = 3; i >= 0; i--) {
 		if (quote[i].className === 'quote' && i !== 0) {
-				quote[i].className += ' slideOff';
-				quote[i - 1].className = 'quote';
-				break;
-		} 
+			quote[i].className += ' slideOff';
+			quote[i - 1].className = 'quote';
+			break;
+		} else if (quote[i].className === 'quote' && i === 0) {
+			quote[i].className += ' slideOff';
+			quote[3].className = 'quote';
+			break;
+		}
 	}
 }
